@@ -19,6 +19,6 @@ export const appConfig: ApplicationConfig = {
       provideStorage(() => getStorage()),
       provideMessaging(() => getMessaging())
     ),
-    provideRouter(routes)
+    provideRouter(routes), provideFirebaseApp(() => initializeApp({"projectId":"ftg-2020","appId":"1:64702379780:web:a970eb2af3cd66f4e60251","databaseURL":"https://ftg-2020.firebaseio.com","storageBucket":"ftg-2020.appspot.com","locationId":"europe-west","apiKey":"AIzaSyBeHf1AtD-ox2sTPzVUvHtpJywhUHMUmTY","authDomain":"ftg-2020.firebaseapp.com","messagingSenderId":"64702379780","measurementId":"G-E0Q5EZDDTB"})), provideAuth(() => getAuth()), provideFirestore(() => getFirestore()), provideMessaging(() => getMessaging()), provideStorage(() => getStorage())
   ],
 };
